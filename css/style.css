@@ -1,0 +1,99 @@
+table {
+    font-family:Arial, Helvetica, sans-serif;
+    color:#666;
+    font-size:12px;
+    text-shadow: 1px 1px 0px #fff;
+    background:#eaebec;
+    margin:20px;
+    border:#ccc 1px solid;
+    border-collapse:separate;
+    margin: auto;
+}
+
+table tr td {
+    padding:18px;
+    width: 50px;
+    height: 50px;
+    border-top: 1px solid #a1bee0;
+    border-bottom:1px solid #a1bee0;
+    border-left: 1px solid #a1bee0;
+    background: #adadad;
+    position: relative;
+}
+
+table td.clicked {
+    background: white;
+    color: #577fcc;
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    text-align: center;
+    content:" ";
+
+}
+
+table td.flag::after {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    background-image:  url("../img/checkered_flag.png");
+    background-size: 50px 50px;
+    left:25px;
+    top:15px;
+    content:"";
+
+}
+
+
+table td.boom::after {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    background-image:  url("../img/bomb .png");
+    background-size: 50px 50px;
+    left:25px;
+    top:15px;
+    content:"";
+}
+
+.button {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+}
+.button:hover { background: rgba(0, 0, 0, 0.51); }
+.button:active { background: white; }
+
+
+.timer {
+    border: 4px solid rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    text-align: center;
+}
+
+.formTimer {
+
+    text-align: center;
+}
+
+
+.container {
+   text-align: center;
+}
+
+.field {
+    text-align: center;
+}
+/* td.innerHTML = game.field[j][i].alongside;
+                  if(game.field[j][i].has_mine) td.style.background = "blue";*/

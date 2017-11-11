@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+<form class="formTimer" name=MyForm>
+    <input class="timer" name=stopwatch size=10 value="00:00:00.00">
+</form>
+
+<div class="field" onclick="StartStop()"></div>
+
+<button class="button" onclick="optionGame(9,9,10)">Новичок</button>
+<button class="button" onclick="optionGame(16,16,40)">Любитель</button>
+<button class="button" onclick="optionGame(16,30,99)">Профессионал</button>
+<button class="button" onclick="restart()">Рестарт</button>
+
+</div>
+
+<script src = "js/game.js"></script>
+</body>
+</html>
